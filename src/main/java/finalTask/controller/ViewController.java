@@ -8,7 +8,7 @@ public class ViewController {
     // 메인 페이지
     @GetMapping("")
     public String index(){
-        return "finalTask/index.html";  // 확장자 .html 없이 경로만 지정
+        return "/finalTask/index.html";  // 확장자 .html 없이 경로만 지정
     }
 
     // 명단 등록 페이지
@@ -20,6 +20,6 @@ public class ViewController {
     // 명단 출력 페이지
     @GetMapping("/waitPrint")
     public String waitPrint(){
-        return "finalTask/waitPrint.html";  // 확장자 .html 없이 경로만 지정
+        return "/finalTask/waitPrint.html";  // 확장자 .html 없이 경로만 지정
     }
 }
