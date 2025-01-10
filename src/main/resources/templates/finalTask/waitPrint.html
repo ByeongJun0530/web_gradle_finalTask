@@ -7,10 +7,19 @@
 <body>
   <div th:replace="~{/finalTask/header.html :: header}"></div>
   <div>
-    전화번호 : <input class="phoneInput"/><br/>
-    인원수 : <input class="memberNumInput"/><br/>
-    <button type="button">등록</button>
+    <h3>대기 명단</h3>
+    <table border="1" class="waithead">
+      <thead>
+        <tr>
+          <th>대기번호</th><th>전화번호</th><th>인원수</th>
+        </tr>
+      </thead>
+      <tbody class = "waitbody">
+
+      </tbody>
+    </table>
   </div>
+
   <script src="/finalTask/wait.js"></script>
 </body>
 </html>
