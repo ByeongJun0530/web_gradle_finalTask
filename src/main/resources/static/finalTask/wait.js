@@ -1,7 +1,6 @@
 console.log("wait.js opened")
 
 let List = [];
-let waitNum = 1;
 
 // 명단 등록 함수 
 function waitRegist(){
@@ -34,7 +33,6 @@ function waitRegist(){
             if(d == true){
                 alert('명단 등록에 성공했습니다.')
                 location.href="/waitPrint"
-                waitPrint()
             }else{
                 alert('명단 등록에 실패했습니다.')
             }
@@ -54,6 +52,7 @@ function waitPrint(){
             for(let index = 0; index <= data.length-1; index++){
                 const row = data[index]
                 HTML += `<tr>
+                            <td>${row.waitNum}</td>
                             <td>${row.phone}</td>
                             <td>${row.memberNum}</td>
                         </tr>`
@@ -63,3 +62,5 @@ function waitPrint(){
         })
         .catch(e => console.log(e))
 }
+
+waitPrint();

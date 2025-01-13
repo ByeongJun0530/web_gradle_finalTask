@@ -9,6 +9,7 @@ import lombok.*;
 @ToString
 @Builder
 public class WaitDto {
+    private int waitNum;
     private String phone;
     private int memberNum;
 }

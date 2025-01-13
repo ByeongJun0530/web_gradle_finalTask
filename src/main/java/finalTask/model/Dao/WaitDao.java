@@ -48,7 +48,7 @@ public class WaitDao {
             ResultSet rs = ps.executeQuery();
             while (rs.next()){
                 WaitDto waitDto = new WaitDto(
-                        rs.getString("phone"), rs.getInt("memberNum")
+                        rs.getInt("waitNum"),rs.getString("phone"), rs.getInt("memberNum")
                 );
                 List.add(waitDto);
             }
